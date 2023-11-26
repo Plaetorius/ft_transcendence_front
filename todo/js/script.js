@@ -35,67 +35,54 @@ function addTask() {
     element.appendChild(div);
 }
 
-
 function setupTaskCheckbox(checkbox, label) {
-    var isLabelClicked = false;
-
-    // Function to update the state of the checkbox
+    // Function to update the state and appearance of the checkbox and label
     function updateState() {
         var state = checkbox.getAttribute('data-state');
 
         switch (state) {
             case 'unchecked':
-                checkbox.checked = true;
-                checkbox.setAttribute('data-state', 'checked');
-                label.className = 'label-checked';
+                checkbox.checked = false;
+                checkbox.indeterminate = false;
+                label.className = 'label-normal';
                 break;
             case 'checked':
-                checkbox.checked = false;
-                checkbox.indeterminate = true;
-                checkbox.setAttribute('data-state', 'failed');
-                label.className = 'label-failed';
+                checkbox.checked = true;
+                checkbox.indeterminate = false;
+                label.className = 'label-checked';
                 break;
             case 'failed':
-                checkbox.indeterminate = false;
-                checkbox.setAttribute('data-state', 'unchecked');
-                label.className = 'label-unchecked';
+                checkbox.checked = false;
+                checkbox.indeterminate = true;
+                label.className = 'label-failed';
                 break;
         }
     }
 
-    // Handle mousedown event
-    label.addEventListener('mousedown', function() {
-        isLabelClicked = true;
+    // Event listener for the checkbox click
+    checkbox.addEventListener('click', function() {
+        var currentState = checkbox.getAttribute('data-state');
+        var newState = currentState === 'unchecked' ? 'checked' :
+                       currentState === 'checked' ? 'failed' : 'unchecked';
+        checkbox.setAttribute('data-state', newState);
+        updateState();
     });
 
-    // Handle mouseup event
-    label.addEventListener('mouseup', function() {
-        if (isLabelClicked) {
-            isLabelClicked = false;
-            updateState();
-        }
-    });
-
-    // Handle mousedown event on the checkbox
-    checkbox.addEventListener('mousedown', function(e) {
-        if (e.target === checkbox) {
-            e.preventDefault();
-            updateState();
-        }
-    });
+    // Initialize the checkbox state
+    updateState();
 }
 
-
-document.addEventListener('keydown', function(event) {
-    if (event.key === "Enter") {
-        addTask();
-    }
-});
-
+// Initialize checkboxes on page load
 document.addEventListener('DOMContentLoaded', function() {
     var existingTasks = document.querySelectorAll('.todo-list input[type="checkbox"]');
     existingTasks.forEach(function(task) {
         var label = task.nextElementSibling;
         setupTaskCheckbox(task, label);
     });
+});
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === "Enter") {
+        addTask();
+    }
 });
