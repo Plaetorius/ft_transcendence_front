@@ -162,3 +162,4 @@ cython_debug/
 
 # Web3 Specific
 package-lock.json
+.DS_Store
