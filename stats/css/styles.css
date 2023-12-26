@@ -21,11 +21,12 @@ time, mark, audio, video {
 }
 
 body {
-    background-color: black;
+    background-color: lightgrey;
 }
 
 
 h1 {
+    font-size: 5rem;
     text-align: center;
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -127,4 +128,37 @@ h1 {
 	max-height: 50px;
 	border-radius: 15px;
 	border: solid 3px black;
+}
+.page-title {
+    margin: 15px 0px 15px 0px;
+}
+
+.leaderboard-table-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leaderboard-podium-div {
+    display: flex;
+
+    justify-content: center;
+}
+
+#leaderboard-podium-third {
+    /* margin: 0px 20px 0px 20px; */
+    padding: 50px 50px 50px 50px;
+    background-color: brown;
+}
+
+#leaderboard-podium-second {
+    /* margin: 0px 20px 0px 20px; */
+    padding: 50px 50px 70px 50px;
+    background-color: silver;
+}
+
+#leaderboard-podium-first {
+    /* margin: 0px 20px 0px 20px; */
+    padding: 50px 50px 90px 50px;
+    background-color: gold;
 }
