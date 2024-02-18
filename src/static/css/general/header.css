@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Canterbury';
+    src: url('../../fonts/Canterbury.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header-middle-section {
+    text-align: center;
+    font-family: 'Canterbury';
+}
+
