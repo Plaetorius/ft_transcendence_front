@@ -5,8 +5,131 @@
     font-style: normal;
 }
 
-.header-middle-section {
-    text-align: center;
-    font-family: 'Canterbury';
+@font-face {
+    font-family: 'Belgrano-Regular';
+    src: url('../../fonts/Belgrano-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
 }
 
+@font-face {
+    font-family: 'Streetwear';
+    src: url('../../fonts/Streetwear.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+main {
+    height: 1000vh;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 20vh;
+    margin-top: 0vh;
+    transition: margin-top 0.5s;
+}
+
+header.scrolled {
+    margin-top: -20vh;
+}
+
+header p {
+    color: black;
+}
+
+#main-header {
+    height: 16vh;
+    /* background-color: aqua; */
+}
+
+#main-header .header-left-section {
+    background-color: blue;
+    border: 10px black;
+    border-style: double;
+    height: 15vh;
+    padding-top: 1rem;
+}
+
+#main-header .header-left-section p {
+    font-family: 'Belgrano-Regular';
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#main-header .header-left-section img {
+    margin-bottom: 0.5rem;
+    height: 5vh;
+    width: auto;
+}
+
+#main-header .header-middle-section {
+    background-color: red;
+    height: 15vh;
+}
+
+#main-header .header-right-section {
+    background-color: green;
+    border: 10px black;
+    border-style: double;
+    height: 15vh;
+    padding-top: 1rem;
+}
+
+#main-header .header-right-section img {
+    margin-bottom: 0.5rem;
+    height: 6vh;
+    width: 6vh;
+    overflow-x: hidden;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+#main-header .header-right-section p {
+    font-family: 'Belgrano-regular';
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#main-header .header-middle-section h1 {
+    text-align: center;
+    font-family: 'Canterbury';
+    font-size: 13vh;
+    letter-spacing: 0.4rem;
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#main-header img {
+    overflow-x: hidden;
+    border-radius: 50%;
+}
+
+#sub-header {
+    border-top: solid 3px black;
+    border-bottom: solid 3px black;
+    height: 4vh;
+}
+
+#sub-header a {
+    font-family: 'Belgrano-Regular';
+    color: black;
+    background-image: linear-gradient(#000 0 0);
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+        letter-spacing 0.3s,
+        background-size 0.3s,
+        background-position 0s 0.3s;
+}
+
+#sub-header a:hover {
+    letter-spacing: 0.1rem;
+    background-position: 100% 100%;
+    background-size: 100% 2px;
+}
