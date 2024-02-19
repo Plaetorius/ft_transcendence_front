@@ -19,9 +19,31 @@
     font-style: normal;
 }
 
+body {
+    background-image: url('../../backgrounds/old-paper-background.jpg');
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-blend-mode: screen;  
+    background-color: rgba(222, 184, 135);
+}
+
 main {
+    margin-top: 22vh;
     height: 1000vh;
 }
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-green {
+    background-color: green;
+}
+
 
 header {
     position: fixed;
@@ -35,7 +57,7 @@ header {
     overflow-y: hidden;
     background-size: cover;
     background-blend-mode: screen;
-    background-color: burlywood;
+    background-color: rgba(222, 184, 135, 0.6);
 }
 
 header.scrolled {
