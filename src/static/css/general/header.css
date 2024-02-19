@@ -30,6 +30,12 @@ header {
     height: 20vh;
     margin-top: 0vh;
     transition: margin-top 0.5s;
+    background-image: url('../../backgrounds/old-paper-background.jpg');
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    background-size: cover;
+    background-blend-mode: screen;
+    background-color: burlywood;
 }
 
 header.scrolled {
@@ -46,7 +52,7 @@ header p {
 }
 
 #main-header .header-left-section {
-    background-color: blue;
+    /* background-color: blue; */
     border: 10px black;
     border-style: double;
     height: 15vh;
@@ -66,12 +72,12 @@ header p {
 }
 
 #main-header .header-middle-section {
-    background-color: red;
+    /* background-color: red; */
     height: 15vh;
 }
 
 #main-header .header-right-section {
-    background-color: green;
+    /* background-color: green; */
     border: 10px black;
     border-style: double;
     height: 15vh;
