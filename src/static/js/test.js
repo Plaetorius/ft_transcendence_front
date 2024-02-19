@@ -9,16 +9,6 @@ newspaper_title.addEventListener('click', () => {
         console.log('Congrats for finding the easter egg :)'); 
 });
 
-document.getElementById('testButton').addEventListener('click', (e) => {
-    ++i;
-    if (i % 2) {
-        header.classList.add('scrolled');
-    }
-    else {
-        header.classList.remove('scrolled');
-    }
-});
-
 window.addEventListener('scroll', () => {
     const currentScroll = window.scrollY;
     if (currentScroll <= 0) {
