@@ -7,6 +7,9 @@
     <title>Transcendence</title>
     <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../static/css/general/header.css">
+    <link rel="stylesheet" href="../static/css/general/general.css">
+    <link rel="stylesheet" href="../static/css/general/my-profile.css">
+    <link rel="stylesheet" href="../static/css/game/history.css">
 </head>
 <body>
     <header class="container-fluid px-5">
@@ -19,7 +22,8 @@
                 <h1 id="newspaperTitle">Transcendence</h1>
             </div>
             <div class="col-2 d-flex flex-column align-items-center justify-content-center header-right-section">
-                <img src="https://picsum.photos/200/300" draggable="false">
+                <!-- <img src="https://picsum.photos/200/300" draggable="false"> -->
+				<img src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
                 <p>PROFILE</p>
             </div>
         </div>
@@ -40,18 +44,60 @@
     </header>
     <nav>
     </nav>
-    <main class="container-fluid">
-        <div class="row">
-            <section class="col-4 bg-red">
-                <h4>TITLE 1</h4>
-            </section>
-            <section class="col-4 bg-blue">
-                <h4>TITLE 2</h4>
-            </section>
-            <section class="col-4 bg-green">
-                <h4>TITLE 3</h4>
-            </section>
-        </div>
+    <main>
+		<section id="home" class="container-fluid">
+			<div class="row">
+				<div class="col-4 bg-red">
+					<h4>TITLE 1</h4>
+				</div>
+				<div class="col-4 bg-blue">
+					<h4>TITLE 2</h4>
+				</div>
+				<div class="col-4 bg-green">
+					<h4>TITLE 3</h4>
+				</div>
+			</div>
+		</section>
+
+		<section id="my-profile" class="active">
+			<div class="container-fluid">
+				<div id="my-profile-header" class="row d-inline-flex">
+					<div class="col m-0">
+						<img id="my-profile-picture" src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
+					</div>
+					<div class="col m-0 p-0">
+						<label id="my-username" for="my-profile-picture">Tgernez</label>
+						<p id="my-profile-rank"><span>Rank: </span>#1</p>
+						<p id="my-profile-elo"><span>Elo: </span>1000</p>
+						<p id="my-profile-winrate"><span>Winrate: </span>1.0</p>
+					</div>
+				</div>
+			</div>
+			<div class="d-inline-flex w-100">
+				<div id="my-profile-history" class="container-fluid d-flex justify-content-center">
+					<div class="row d-inline-flex bg-blue w-50 m-0 p-2 justify-content-around">
+						<div class="col-3 d-flex justify-content-center m-0 p-0" style="background-color: aliceblue;">
+							<img class="history-profile-picture" src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
+						</div>
+						<div class="col-2 m-0 p-0 d-flex flex-column align-items-center justify-content-center" style="background-color: aqua;">
+							Win
+						</div>
+						<div class="col-2 m-0 p-0 d-flex flex-column align-items-center justify-content-center" style="background-color: aquamarine;">
+							<div>3/1</div>
+							<div>5:56</div>
+							<div>+20</div>
+						</div>
+						<div class="col-2 m-0 p-0 d-flex flex-column align-items-center justify-content-center" style="background-color: azure;">
+							Loose
+						</div>
+						<div class="col-3 d-flex justify-content-center m-0 p-0" style="background-color:beige">
+							<img class="history-profile-picture" src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</section>
     </main>
     <script src="../static/js/test.js"></script>
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>

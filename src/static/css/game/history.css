@@ -1,0 +1,9 @@
+.history-profile-picture {
+	height: 9vh;
+	width: 9vh;
+	overflow: hidden;
+	object-fit: cover;
+    object-position: center;
+	border-radius: 5%;
+}
+

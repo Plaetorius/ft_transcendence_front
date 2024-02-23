@@ -1,0 +1,12 @@
+main {
+    margin-top: 22vh;
+    height: 1000vh;
+}
+
+section {
+	display: none;
+}
+
+section.active {
+	display: block;
+}
