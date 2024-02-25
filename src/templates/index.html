@@ -76,10 +76,8 @@
 			
 			<div id="my-profile-history" class="container-fluid w-100 d-flex justify-content-center flex-wrap">
 				<div class="row d-inline-flex w-75 mx-0 my-1 py-2 px-0 justify-content-around history-row history-win">
-					<div class="col-2 d-flex justify-content-center m-0 p-0">
-						<a href="CHANGETO user profile page" title="CHANGETO username">
-							<img class="history-profile-picture" src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
-						</a>
+					<div class="col-2 d-flex justify-content-center mx-0 my-2 p-0">
+						<img class="history-profile-picture" src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
 					</div>
 					<div class="col-2 history-perks d-flex align-items-center justify-content-between flex-wrap">
 						<div class="col-6 p-0 d-flex justify-content-center">
@@ -103,7 +101,7 @@
 					</div>
 					<div class="col-2 m-0 p-0 d-flex flex-column align-items-center justify-content-center">
 						<div class="history-game-score">3 / 1</div>
-						<div class="history-game-elo">+20</div>
+						<div class="history-game-elo">+20 PP</div>
 					</div>
 					<div class="col-2 m-0 history-perks d-flex align-items-center justify-content-between flex-wrap">
 						<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
@@ -111,48 +109,33 @@
 						<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
 						<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
 					</div>
-					<div class="col-2 d-flex justify-content-center m-0 p-0">
-						<a href="CHANGETO user profile link" title="CHANGETO username">
-							<img class="history-profile-picture" src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
-						</a>
-					</div>
-				</div>
-
-				<div class="row d-inline-flex w-75 mx-0 my-1 py-2 px-0 justify-content-around history-row history-loss">
-					<div class="col-2 d-flex justify-content-center m-0 p-0">
-						<img class="history-profile-picture" src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
-					</div>
-					<div class="col-2 history-perks d-flex align-items-center justify-content-between flex-wrap">
-						<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
-						<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
-						<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
-						<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
-					</div>
-					<div class="col-2 m-0 p-0 d-flex flex-column align-items-center justify-content-center">
-						<div class="history-game-result">LOSS</div>
-						<div class="history-game-time">5:56</div>
-						<div class="history-game-type">Ranked</div>
-						<div class="history-time-since">11hours ago</div>
-					</div>
-					<div class="col-2 m-0 p-0 d-flex flex-column align-items-center justify-content-center">
-						<div class="history-game-score">3 / 1</div>
-						<div class="history-game-elo">+20</div>
-					</div>
-					<div class="col-2 m-0 history-perks d-flex align-items-center justify-content-between flex-wrap">
-						<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
-						<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
-						<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
-						<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
-					</div>
-					<div class="col-2 d-flex justify-content-center m-0 p-0">
+					<div class="col-2 d-flex justify-content-center mx-0 my-2 p-0">
 						<img class="history-profile-picture" src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
 					</div>
 				</div>
-
 			</div>
 		</section>
-		<div id="card-popup-view" class="container d-none">
-			Test
+		<div id="card-popup" class="container d-none">
+			<div class="row title">
+				<div class="col">
+					<h4>Basher</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 my-0">
+					<img class="card-visual" src="../static/cards/card-basher-1.png">
+				</div>
+				<div class="col-6 d-flex flex-column mt-5">
+					<div class="col mt-2">
+						<div><span class="rank">Rank 1: </span>+5% ball speed</div>
+						<div><span class="rank">Rank 2: </span>+10% return ball speed</div>
+					</div>
+					<div class="col mt-0 p-0">
+						<div class="quote">"Oh you wanna play it like that? TAKE THIS"</div>
+					</div>
+				</div>
+				
+			</div>
 		</div>
     </main>
 	<script src="../static/js/index.js"></script>
