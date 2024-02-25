@@ -42,6 +42,7 @@ body {
 
 header {
     position: fixed;
+	z-index: 10;
     left: 0;
     top: 0;
     height: 20vh;
@@ -69,7 +70,6 @@ header p {
 }
 
 #main-header .header-left-section {
-    /* background-color: blue; */
     border: 10px black;
     border-style: double;
     height: 15vh;
@@ -89,12 +89,10 @@ header p {
 }
 
 #main-header .header-middle-section {
-    /* background-color: red; */
     height: 15vh;
 }
 
 #main-header .header-right-section {
-    /* background-color: green; */
     border: 10px black;
     border-style: double;
     height: 15vh;

@@ -10,3 +10,8 @@ section {
 section.active {
 	display: block;
 }
+
+.blurry {
+	filter: blur(0.2rem);
+	transition: filter 0.5s ease;
+}

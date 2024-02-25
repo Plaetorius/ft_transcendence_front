@@ -1,0 +1,13 @@
+main #card-popup-view {
+	position: fixed;
+	top: 10vh;
+	left: 30vw;
+	width: 40vw;
+	height: 80vh;
+	z-index: 100;
+	background-color: white;
+	border: 5px black solid;
+	background-image: url("../../backgrounds/old-paper-background.jpg");
+	background-position: center;
+}
+

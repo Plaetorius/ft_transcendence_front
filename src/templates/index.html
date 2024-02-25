@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../static/css/general/general.css">
     <link rel="stylesheet" href="../static/css/general/my-profile.css">
     <link rel="stylesheet" href="../static/css/game/history.css">
+	<link rel="stylesheet" href="../static/css/cards/cards.css">
 </head>
 <body>
     <header class="container-fluid px-5">
@@ -22,7 +23,6 @@
                 <h1 id="newspaperTitle">Transcendence</h1>
             </div>
             <div class="col-2 d-flex flex-column align-items-center justify-content-center header-right-section">
-                <!-- <img src="https://picsum.photos/200/300" draggable="false"> -->
 				<img src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
                 <p>PROFILE</p>
             </div>
@@ -61,7 +61,7 @@
 
 		<section id="my-profile" class="active">
 			<div class="container-fluid">
-				<div id="my-profile-header" class="row d-inline-flex">
+				<div id="my-profile-header" class="row d-inline-flex align-items-center">
 					<div class="col m-0">
 						<img id="my-profile-picture" src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
 					</div>
@@ -73,33 +73,90 @@
 					</div>
 				</div>
 			</div>
-			<div class="d-inline-flex w-100">
-				<div id="my-profile-history" class="container-fluid d-flex justify-content-center">
-					<div class="row d-inline-flex bg-blue w-50 m-0 p-2 justify-content-around">
-						<div class="col-3 d-flex justify-content-center m-0 p-0" style="background-color: aliceblue;">
+			
+			<div id="my-profile-history" class="container-fluid w-100 d-flex justify-content-center flex-wrap">
+				<div class="row d-inline-flex w-75 mx-0 my-1 py-2 px-0 justify-content-around history-row history-win">
+					<div class="col-2 d-flex justify-content-center m-0 p-0">
+						<a href="CHANGETO user profile page" title="CHANGETO username">
 							<img class="history-profile-picture" src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
+						</a>
+					</div>
+					<div class="col-2 history-perks d-flex align-items-center justify-content-between flex-wrap">
+						<div class="col-6 p-0 d-flex justify-content-center">
+							<img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false">
 						</div>
-						<div class="col-2 m-0 p-0 d-flex flex-column align-items-center justify-content-center" style="background-color: aqua;">
-							Win
+						<div class="col-6 p-0 d-flex justify-content-center">
+							<img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false">
 						</div>
-						<div class="col-2 m-0 p-0 d-flex flex-column align-items-center justify-content-center" style="background-color: aquamarine;">
-							<div>3/1</div>
-							<div>5:56</div>
-							<div>+20</div>
+						<div class="col-6 p-0 d-flex justify-content-center">
+							<img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false">
 						</div>
-						<div class="col-2 m-0 p-0 d-flex flex-column align-items-center justify-content-center" style="background-color: azure;">
-							Loose
-						</div>
-						<div class="col-3 d-flex justify-content-center m-0 p-0" style="background-color:beige">
-							<img class="history-profile-picture" src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
+						<div class="col-6 p-0 d-flex justify-content-center">
+							<img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false">
 						</div>
 					</div>
+					<div class="col-2 m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+						<div class="history-game-result">WIN</div>
+						<div class="history-game-time">5:56</div>
+						<div class="history-game-type">Ranked</div>
+						<div class="history-time-since">11hours ago</div>
+					</div>
+					<div class="col-2 m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+						<div class="history-game-score">3 / 1</div>
+						<div class="history-game-elo">+20</div>
+					</div>
+					<div class="col-2 m-0 history-perks d-flex align-items-center justify-content-between flex-wrap">
+						<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
+						<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
+						<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
+						<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
+					</div>
+					<div class="col-2 d-flex justify-content-center m-0 p-0">
+						<a href="CHANGETO user profile link" title="CHANGETO username">
+							<img class="history-profile-picture" src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
+						</a>
+					</div>
 				</div>
+
+				<div class="row d-inline-flex w-75 mx-0 my-1 py-2 px-0 justify-content-around history-row history-loss">
+					<div class="col-2 d-flex justify-content-center m-0 p-0">
+						<img class="history-profile-picture" src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
+					</div>
+					<div class="col-2 history-perks d-flex align-items-center justify-content-between flex-wrap">
+						<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
+						<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
+						<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
+						<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
+					</div>
+					<div class="col-2 m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+						<div class="history-game-result">LOSS</div>
+						<div class="history-game-time">5:56</div>
+						<div class="history-game-type">Ranked</div>
+						<div class="history-time-since">11hours ago</div>
+					</div>
+					<div class="col-2 m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+						<div class="history-game-score">3 / 1</div>
+						<div class="history-game-elo">+20</div>
+					</div>
+					<div class="col-2 m-0 history-perks d-flex align-items-center justify-content-between flex-wrap">
+						<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
+						<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
+						<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
+						<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
+					</div>
+					<div class="col-2 d-flex justify-content-center m-0 p-0">
+						<img class="history-profile-picture" src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
+					</div>
+				</div>
+
 			</div>
-			
 		</section>
+		<div id="card-popup-view" class="container d-none">
+			Test
+		</div>
     </main>
-    <script src="../static/js/test.js"></script>
+	<script src="../static/js/index.js"></script>
+	<script src="../static/js//cards/cards.js"></script>
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

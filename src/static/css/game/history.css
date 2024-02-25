@@ -7,3 +7,64 @@
 	border-radius: 5%;
 }
 
+.history-game-result {
+	font-size: large;
+	font-weight: bold;
+}
+
+.history-win .history-game-result {
+	color: rgb(66, 118, 214);
+}
+
+.history-loss .history-game-result {
+	color: rgb(225, 53, 53);
+}
+
+.history-game-type {
+	margin-top: 0.3rem;
+}
+
+.history-time-since {
+	margin-top: -0.3rem;
+	font-size: 0.7rem;
+}
+
+.history-row {
+	color: whitesmoke;
+	border-radius: 0.3rem;
+}
+
+.history-perk-card {
+	height: 2.5rem;
+	overflow: hidden;
+	object-fit: cover;
+	object-position: center;
+}
+
+.history-perk-card:hover {
+	transform: scale(2);
+
+}
+
+.history-row.history-win {
+	background-color: rgb(34, 75, 153);
+}
+
+.history-row.history-loss {
+	background-color: rgb(145, 22, 22);
+}
+
+.history-game-score {
+	font-size: large;
+	font-weight: bold;
+}
+
+.history-game-time {
+	margin-top: -0.3rem;
+	font-size: small;
+}
+
+.history-game-elo {
+	margin-top: -0.3rem;
+	margin-left: -0.3rem;
+}
