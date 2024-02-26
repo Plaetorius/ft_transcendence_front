@@ -43,7 +43,14 @@ header p {
     margin-bottom: 0.5rem;
     height: 5vh;
     width: auto;
+	cursor: pointer;
 }
+
+#main-header .header-left-section img:hover {	
+	transition: transform 0.3s ease;
+	transform: scale(1.2);
+}
+	
 
 #main-header .header-middle-section {
     height: 15vh;
@@ -61,8 +68,14 @@ header p {
     height: 6vh;
     width: 6vh;
     overflow-x: hidden;
+	cursor: pointer;
 }
 
+#main-header .header-right-section img:hover {	
+	transition: transform 0.3s ease;
+	transform: scale(1.2);
+}
+	
 #main-header .header-right-section p {
     font-family: 'Belgrano-regular';
     font-size: 1.5rem;

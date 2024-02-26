@@ -9,6 +9,8 @@ document.querySelectorAll(".history-profile-picture").forEach(element => {
 	});
 });
 
+
+// TODO check if clicked element isn't a button within the popup
 document.addEventListener('click', (event) => {
 	if (!profilePopup.contains(event.target) && !event.target.matches('.history-profile-picture')) {
 		event.stopPropagation();
@@ -17,3 +19,9 @@ document.addEventListener('click', (event) => {
 		unblur_background();
 	}
 });
+
+
+// TODO remove (for debug)
+profilePopup.classList.remove("d-none");
+profilePopup.classList.add("d-block");
+blur_background();
