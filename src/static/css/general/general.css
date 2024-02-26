@@ -15,3 +15,11 @@ section.active {
 	filter: blur(0.2rem);
 	transition: filter 0.5s ease;
 }
+
+body {
+    background-image: url('../../backgrounds/old-paper-background.jpg');
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-blend-mode: screen;  
+    background-color: rgba(222, 184, 135);
+}

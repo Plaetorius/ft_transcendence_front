@@ -1,21 +1,19 @@
-const cardPopupView = document.getElementById("card-popup");
-
-
+const cardPopup = document.getElementById("card-popup");
 
 document.querySelectorAll(".history-perk-card").forEach(element => {
-	element.addEventListener('click', () => {
-		cardPopupView.classList.remove("d-none");
-		cardPopupView.classList.add("d-block");
-		activeSection.classList.add("blurry");
-		header.classList.add("blurry");
+	element.addEventListener('click', (event) => {
+		event.stopPropagation();
+		cardPopup.classList.remove("d-none");
+		cardPopup.classList.add("d-block");
+		blur_background();
 	});
 });
 
 document.addEventListener('click', (event) => {
-	if (!cardPopupView.contains(event.target) && !event.target.matches('.history-perk-card')) {
-		cardPopupView.classList.add("d-none");
-		cardPopupView.classList.remove("d-block");
-		activeSection.classList.remove("blurry");
-		header.classList.remove("blurry");
+	if (!cardPopup.contains(event.target) && !event.target.matches('.history-perk-card')) {
+		event.stopPropagation();
+		cardPopup.classList.add("d-none");
+		cardPopup.classList.remove("d-block");
+		unblur_background();
 	}
 });

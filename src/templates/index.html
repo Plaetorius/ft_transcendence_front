@@ -7,10 +7,12 @@
     <title>Transcendence</title>
     <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../static/css/general/header.css">
+    <link rel="stylesheet" href="../static/css/general/fonts.css">
     <link rel="stylesheet" href="../static/css/general/general.css">
     <link rel="stylesheet" href="../static/css/general/my-profile.css">
     <link rel="stylesheet" href="../static/css/game/history.css">
 	<link rel="stylesheet" href="../static/css/cards/cards.css">
+	<link rel="stylesheet" href="../static/css/users/profile.css">
 </head>
 <body>
     <header class="container-fluid px-5">
@@ -74,10 +76,54 @@
 				</div>
 			</div>
 			
-			<div id="my-profile-history" class="container-fluid w-100 d-flex justify-content-center flex-wrap">
-				<div class="row d-inline-flex w-75 mx-0 my-1 py-2 px-0 justify-content-around history-row history-win">
+			<div id="my-profile-history">
+				<h3>Match History</h3>
+				<div class="container-fluid w-100 d-flex justify-content-center flex-wrap">
+					<div class="row d-inline-flex w-75 mx-0 my-1 py-2 px-0 justify-content-around history-row history-win">
+						<div class="col-2 d-flex justify-content-center mx-0 my-2 p-0">
+							<img class="history-profile-picture" data-username="tgernez" src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
+						</div>
+						<div class="col-2 history-perks d-flex align-items-center justify-content-between flex-wrap">
+							<div class="col-6 p-0 d-flex justify-content-center">
+								<img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false">
+							</div>
+							<div class="col-6 p-0 d-flex justify-content-center">
+								<img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false">
+							</div>
+							<div class="col-6 p-0 d-flex justify-content-center">
+								<img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false">
+							</div>
+							<div class="col-6 p-0 d-flex justify-content-center">
+								<img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false">
+							</div>
+						</div>
+						<div class="col-2 m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+							<div class="history-game-result">WIN</div>
+							<div class="history-game-time">5:56</div>
+							<div class="history-game-type">Ranked</div>
+							<div class="history-time-since">11hours ago</div>
+						</div>
+						<div class="col-2 m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+							<div class="history-game-score">3 / 1</div>
+							<div class="history-game-elo">+20 PP</div>
+						</div>
+						<div class="col-2 m-0 history-perks d-flex align-items-center justify-content-between flex-wrap">
+							<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
+							<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
+							<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
+							<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
+						</div>
+						<div class="col-2 d-flex justify-content-center mx-0 my-2 p-0">
+							<img class="history-profile-picture" data-username="tgernez" src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container-fluid w-100 d-flex justify-content-center flex-wrap">
+				<div class="row d-inline-flex w-75 mx-0 my-1 py-2 px-0 justify-content-around history-row history-loss">
 					<div class="col-2 d-flex justify-content-center mx-0 my-2 p-0">
-						<img class="history-profile-picture" src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
+						<img class="history-profile-picture" data-username="tgernez" src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
 					</div>
 					<div class="col-2 history-perks d-flex align-items-center justify-content-between flex-wrap">
 						<div class="col-6 p-0 d-flex justify-content-center">
@@ -94,7 +140,7 @@
 						</div>
 					</div>
 					<div class="col-2 m-0 p-0 d-flex flex-column align-items-center justify-content-center">
-						<div class="history-game-result">WIN</div>
+						<div class="history-game-result">LOSS</div>
 						<div class="history-game-time">5:56</div>
 						<div class="history-game-type">Ranked</div>
 						<div class="history-time-since">11hours ago</div>
@@ -110,11 +156,14 @@
 						<div class="col-6 p-0 d-flex justify-content-center"><img class="history-perk-card" src="../static/cards/card-basher-1.png" draggable="false"></div>
 					</div>
 					<div class="col-2 d-flex justify-content-center mx-0 my-2 p-0">
-						<img class="history-profile-picture" src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
+						<img class="history-profile-picture" data-username="tgernez" src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
 					</div>
 				</div>
 			</div>
+		</div>
+
 		</section>
+
 		<div id="card-popup" class="container d-none">
 			<div class="row title">
 				<div class="col">
@@ -134,12 +183,31 @@
 						<div class="quote">"Oh you wanna play it like that? TAKE THIS"</div>
 					</div>
 				</div>
-				
+			</div>
+		</div>
+
+		<div id="profile-popup" class="container d-none">
+			<div class="row title">
+				<div class="col">
+					<h4>Tgernez</h4>
+				</div>
+			</div>
+			<div class="row d-inline-flex">
+				<div class="col m-0">
+					<img src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
+				</div>
+				<div class="col m-0 p-0">
+					<p><span class="attribute">Rank: </span>#1</p>
+					<p><span class="attribute">Elo: </span>1000</p>
+					<p><span class="attribute">Winrate: </span>1.0</p>
+					
+				</div>
 			</div>
 		</div>
     </main>
 	<script src="../static/js/index.js"></script>
 	<script src="../static/js//cards/cards.js"></script>
+	<script src="../static/js//users/profile.js"></script>
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

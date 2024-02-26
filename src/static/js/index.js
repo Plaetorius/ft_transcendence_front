@@ -25,3 +25,13 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scrolled');
     lastScroll = currentScroll;
 });
+
+function blur_background() {
+	activeSection.classList.add("blurry");
+	header.classList.add("blurry");
+}
+
+function unblur_background() {
+	activeSection.classList.remove("blurry");
+	header.classList.remove("blurry");
+}

@@ -5,6 +5,7 @@
 	object-fit: cover;
     object-position: center;
 	border-radius: 5%;
+	cursor: pointer;
 }
 
 .history-game-result {
@@ -39,11 +40,11 @@
 	overflow: hidden;
 	object-fit: cover;
 	object-position: center;
+	cursor: pointer;
 }
 
 .history-perk-card:hover {
 	transform: scale(2);
-
 }
 
 .history-row.history-win {

@@ -38,3 +38,9 @@
 #my-profile-history {
 	margin-top: 2vh;
 }
+
+#my-profile-history h3 {
+	font-family: 'Mouse Memoirs';
+	font-size: 3rem;
+	text-align: center;
+}
