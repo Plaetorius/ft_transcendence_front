@@ -20,8 +20,3 @@ document.addEventListener('click', (event) => {
 	}
 });
 
-
-// TODO remove (for debug)
-profilePopup.classList.remove("d-none");
-profilePopup.classList.add("d-block");
-blur_background();

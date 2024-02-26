@@ -76,3 +76,19 @@
 	margin-top: -0.2rem;
 	margin-left: -0.3rem;
 }
+
+#my-profile button {
+	border: none;
+	background: none;
+}
+
+#my-profile button img {
+	height: 4vh;
+	width: 4vh;
+	margin: 1vh;
+}
+
+#my-profile button img:hover {
+	transition: transform 0.3s ease;
+	transform: scale(1.3);
+}
