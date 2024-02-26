@@ -24,7 +24,6 @@ header p {
 
 #main-header {
     height: 16vh;
-    /* background-color: aqua; */
 }
 
 #main-header .header-left-section {
@@ -62,8 +61,6 @@ header p {
     height: 6vh;
     width: 6vh;
     overflow-x: hidden;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
 }
 
 #main-header .header-right-section p {
