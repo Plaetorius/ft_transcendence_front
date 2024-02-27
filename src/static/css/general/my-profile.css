@@ -27,10 +27,6 @@
 	padding: 0;
 }
 
-#my-profile #my-username .online-status {
-	margin-right: 0.1rem;
-}
-
 #my-profile-header #my-profile-rank {
 	margin-top: -0.3rem;	
 }
@@ -51,7 +47,7 @@
 	margin-top: 2vh;
 }
 
-#my-profile-history h3 {
+#my-profile-history h4 {
 	font-family: 'Belgrano-Regular';
 	font-size: 3rem;
 	text-align: center;
