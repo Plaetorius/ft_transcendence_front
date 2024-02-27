@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../static/css/game/history.css">
 	<link rel="stylesheet" href="../static/css/cards/cards.css">
 	<link rel="stylesheet" href="../static/css/users/profile.css">
+	<link rel="stylesheet" href="../static/css/users/friends.css">
 </head>
 <body>
     <header class="container-fluid px-5">
@@ -47,21 +48,95 @@
     <nav>
     </nav>
     <main>
-		<section id="home" class="container-fluid">
-			<div class="row">
-				<div class="col-4 bg-red">
-					<h4>TITLE 1</h4>
-				</div>
-				<div class="col-4 bg-blue">
-					<h4>TITLE 2</h4>
-				</div>
-				<div class="col-4 bg-green">
-					<h4>TITLE 3</h4>
+		<section id="home" class="">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-4 bg-red">
+						<h4>TITLE 1</h4>
+					</div>
+					<div class="col-4 bg-blue">
+						<h4>TITLE 2</h4>
+					</div>
+					<div class="col-4 bg-green">
+						<h4>TITLE 3</h4>
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<section id="my-profile" class="active">
+		<section id="games" class="">
+			
+		</section>
+
+		<section id="friends" class="active">
+			<div class="container-fluid">
+				<div id="friends-header" class="row">
+					<div class="col d-flex flex-column justify-content-center align-items-center">
+						<h1>Friends</h1>
+						<form>
+							<input placeholder="Username...">
+							<button type="submit">&#128269;</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid friendships mt-2 d-flex flex-column align-items-center">
+				<div class="row d-flex justify-content-center align-items-center w-75 mt-2">
+					<div class="col-6 d-flex justify-content-start align-items-center">
+						<img src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">				
+						<span>Tgernez</span>
+					</div>
+					<div class="col-6 d-flex flex-row justify-content-end">
+						<button class="profile-action-button" data-username="username" title="Chat"><img src="../static/icons/chat.png" draggable="false"></button>
+						<button class="profile-action-button" data-username="username" title="Remove friend"><img src="../static/icons/remove-friend.png" draggable="false"></button>
+						<button class="profile-action-button" data-username="username" title="Block user"><img src="../static/icons/block.png" draggable="false"></button>
+					</div>
+				</div>
+
+				<div class="row d-flex justify-content-center align-items-center w-75 mt-2">
+					<div class="col-6 d-flex justify-content-start align-items-center">
+						<img src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">				
+						<span>Tgernez</span>
+					</div>
+					<div class="col-6 d-flex flex-row justify-content-end">
+						<button class="profile-action-button" data-username="username" title="Chat"><img src="../static/icons/chat.png" draggable="false"></button>
+						<button class="profile-action-button" data-username="username" title="Remove friend"><img src="../static/icons/remove-friend.png" draggable="false"></button>
+						<button class="profile-action-button" data-username="username" title="Block user"><img src="../static/icons/block.png" draggable="false"></button>
+					</div>
+				</div>
+
+				<div class="row d-flex justify-content-center align-items-center w-75 mt-2">
+					<div class="col-6 d-flex justify-content-start align-items-center">
+						<img src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">				
+						<span>Tgernez</span>
+					</div>
+					<div class="col-6 d-flex flex-row justify-content-end">
+						<button class="profile-action-button" data-username="username" title="Chat"><img src="../static/icons/chat.png" draggable="false"></button>
+						<button class="profile-action-button" data-username="username" title="Remove friend"><img src="../static/icons/remove-friend.png" draggable="false"></button>
+						<button class="profile-action-button" data-username="username" title="Block user"><img src="../static/icons/block.png" draggable="false"></button>
+					</div>
+				</div>
+
+				<div class="row d-flex justify-content-center align-items-center w-75 mt-2">
+					<div class="col-6 d-flex justify-content-start align-items-center">
+						<img src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">				
+						<span>Tgernez</span>
+					</div>
+					<div class="col-6 d-flex flex-row justify-content-end">
+						<button class="profile-action-button" data-username="username" title="Chat"><img src="../static/icons/chat.png" draggable="false"></button>
+						<button class="profile-action-button" data-username="username" title="Remove friend"><img src="../static/icons/remove-friend.png" draggable="false"></button>
+						<button class="profile-action-button" data-username="username" title="Block user"><img src="../static/icons/block.png" draggable="false"></button>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="podium" class="">
+			
+		</section>
+
+		<section id="my-profile" class="">
 			<div class="container-fluid">
 				<div id="my-profile-header" class="row justify-content-between">
 					<div class="col-auto d-flex align-items-center">
@@ -75,22 +150,21 @@
 						</div>
 					</div>
 					<div class="col-auto">
-						<button class="profile-action-button" data-username="username" title="Chat"><img src="../static/icons/chat.png"></button>
-						<button class="profile-action-button" data-username="username" title="Add friend"><img src="../static/icons/add-friend.png"></button>
-						<!-- TODO <button class="profile-action-button" data-username="username" title="Remove friend"><img src="../static/icons/remove-friend.png"></button> -->
-						<button class="profile-action-button" data-username="username" title="Block user"><img src="../static/icons/block.png"></button>
-						<!-- TODO <button class="profile-action-button" data-username="username" title="Unblock user"><img src="../static/icons/check.png"></button> -->
+						<button class="profile-action-button" data-username="username" title="Chat"><img src="../static/icons/chat.png" draggable="false"></button>
+						<button class="profile-action-button" data-username="username" title="Add friend"><img src="../static/icons/add-friend.png" draggable="false"></button>
+						<!-- TODO <button class="profile-action-button" data-username="username" title="Remove friend"><img src="../static/icons/remove-friend.png" draggable="false"></button> -->
+						<button class="profile-action-button" data-username="username" title="Block user"><img src="../static/icons/block.png" draggable="false"></button>
+						<!-- TODO <button class="profile-action-button" data-username="username" title="Unblock user"><img src="../static/icons/check.png" draggable="false"></button> -->
 					</div>
 				</div>
 			</div>
-			
 			
 			<div id="my-profile-history">
 				<h4>Match History</h4>
 				<div class="container-fluid w-100 d-flex justify-content-center flex-wrap">
 					<div class="row d-inline-flex w-75 mx-0 my-1 py-2 px-0 justify-content-around history-row history-win">
 						<div class="col-2 d-flex justify-content-center mx-0 my-2 p-0">
-							<img class="history-profile-picture" data-username="tgernez" src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
+							<img class="history-profile-picture" data-username="username" src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
 						</div>
 						<div class="col-2 history-perks d-flex align-items-center justify-content-between flex-wrap">
 							<div class="col-6 p-0 d-flex justify-content-center">
@@ -169,10 +243,9 @@
 					</div>
 				</div>
 			</div>
-		</div>
-
 		</section>
 
+		
 		<div id="card-popup" class="container d-none">
 			<div class="row title">
 				<div class="col">
@@ -181,7 +254,7 @@
 			</div>
 			<div class="row">
 				<div class="col-6 my-0">
-					<img class="card-visual" src="../static/cards/card-basher-1.png">
+					<img class="card-visual" src="../static/cards/card-basher-1.png" draggable="false">
 				</div>
 				<div class="col-6 d-flex flex-column mt-5">
 					<div class="col mt-2">
@@ -219,11 +292,12 @@
 			</div>
 			<div class="row m-2">
 				<div class="col">
-					<button id="profile-popup-add-friend" data-username="username"><img src="../static/icons/chat.png" title="Chat"></button>
-					<button id="profile-popup-add-friend" data-username="username"><img src="../static/icons/add-friend.png" title="Add friend"></button>
-					<!-- TODO <button id="profile-popup-remove-friend" data-username="username"><img src="../static/icons/remove-friend.png" title="Remove friend"></button> -->
-					<button id="profile-popup-block" data-username="username"><img src="../static/icons/block.png" title="Block user"></button>
-					<!-- TODO <button id="profile-popup-unblock" data-username="username"><img src="../static/icons/check.png" title="Unblock user"></button> -->
+					<button id="profile-popup-add-friend" data-username="username"><img src="../static/icons/chat.png" title="Chat" draggable="false"></button>
+					<button id="profile-popup-add-friend" data-username="username"><img src="../static/icons/add-friend.png" title="Add friend" draggable="false"></button>
+					<!-- TODO <button id="profile-popup-remove-friend" data-username="username"><img src="../static/icons/remove-friend.png" title="Remove friend" draggable="false"></button> -->
+					<button id="profile-popup-block" data-username="username"><img src="../static/icons/block.png" title="Block user" draggable="false"></button>
+					<!-- TODO <button id="profile-popup-unblock" data-username="username"><img src="../static/icons/check.png" title="Unblock user" draggable="false"></button> -->
+					<button id="profile-popup-profile" data-username="username"><img src="../static/icons/profile.png" title="Profile" draggable="false"></button>
 				</div>
 			</div>
 		</div>

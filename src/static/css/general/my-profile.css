@@ -28,7 +28,7 @@
 }
 
 #my-profile-header #my-profile-rank {
-	margin-top: -0.3rem;	
+	margin-top: -0.5rem;	
 }
 
 #my-profile-header #my-profile-elo {
@@ -53,3 +53,8 @@
 	text-align: center;
 }
 
+#my-profile span.online-status {
+	height: 2vh;
+	width: 2vh;
+	margin-right: 0.3rem;
+}
