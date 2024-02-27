@@ -95,3 +95,9 @@ span.online-status.online {
 span.online-status.offline {
 	background-color: rgb(202, 14, 14);
 }
+
+#profile-popup h4 span.online-status {
+	height: 3vh;
+	width: 3vh;
+	margin-bottom: 0.6rem;
+}

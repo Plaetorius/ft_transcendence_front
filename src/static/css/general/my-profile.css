@@ -4,8 +4,8 @@
 }
 
 #my-profile #my-profile-picture {
-	height: 12vh;
-	width: 12vh;
+	height: 14vh;
+	width: 14vh;
 	overflow: hidden;
 	object-fit: cover;
     object-position: center;
@@ -27,11 +27,23 @@
 	padding: 0;
 }
 
+#my-profile #my-username .online-status {
+	margin-right: 0.1rem;
+}
+
+#my-profile-header #my-profile-rank {
+	margin-top: -0.3rem;	
+}
+
 #my-profile-header #my-profile-elo {
 	margin-top: -0.3rem;	
 }
 
 #my-profile-header #my-profile-winrate {
+	margin-top: -0.3rem;
+}
+
+#my-profile-header #my-profile-joined {
 	margin-top: -0.3rem;
 }
 

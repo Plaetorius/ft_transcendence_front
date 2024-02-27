@@ -63,27 +63,27 @@
 
 		<section id="my-profile" class="active">
 			<div class="container-fluid">
-				<div id="my-profile-header" class="row d-inline-flex align-items-center">
-					<div class="col m-0">
-						<img id="my-profile-picture" src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
+				<div id="my-profile-header" class="row justify-content-between">
+					<div class="col-auto d-flex align-items-center">
+						<img id="my-profile-picture" src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false" class="m-3">
+						<div class="ml-3">
+							<h3 id="my-username"><span class="online-status online"></span>Tgernez</h3>
+							<p id="my-profile-rank"><span>Rank: </span>#1</p>
+							<p id="my-profile-elo"><span>Elo: </span>1000</p>
+							<p id="my-profile-winrate"><span>Winrate: </span>1.0</p>
+							<p id="my-profile-joined"><span>Joined: </span>26/01/2024</p>
+						</div>
 					</div>
-					<div class="col m-0 p-0">
-						<label id="my-username" for="my-profile-picture">Tgernez</label>
-						<p id="my-profile-online-status"><span>Online</span></p>
-						<p id="my-profile-rank"><span>Rank: </span>#1</p>
-						<p id="my-profile-elo"><span>Elo: </span>1000</p>
-						<p id="my-profile-winrate"><span>Winrate: </span>1.0</p>
-						<p id="my-profile-joined"><span>Joined: </span>26/01/2024</p>
-					</div>
-					<div class="col w-100">
-						<button id="profile-popup-add-friend" data-username="username"><img src="../static/icons/chat.png" title="Chat"></button>
-						<button id="profile-popup-add-friend" data-username="username"><img src="../static/icons/add-friend.png" title="Add friend"></button>
-						<!-- <button id="profile-popup-remove-friend" data-username="username"><img src="../static/icons/remove-friend.png" title="Remove friend"></button> -->
-						<button id="profile-popup-block" data-username="username"><img src="../static/icons/block.png" title="Block user"></button>
-						<!-- <button id="profile-popup-unblock" data-username="username"><img src="../static/icons/check.png" title="Unblock user"></button> -->
+					<div class="col-auto">
+						<button class="profile-action-button" data-username="username" title="Chat"><img src="../static/icons/chat.png"></button>
+						<button class="profile-action-button" data-username="username" title="Add friend"><img src="../static/icons/add-friend.png"></button>
+						<!-- Uncomment if needed: <button class="profile-action-button" data-username="username" title="Remove friend"><img src="../static/icons/remove-friend.png"></button> -->
+						<button class="profile-action-button" data-username="username" title="Block user"><img src="../static/icons/block.png"></button>
+						<!-- Uncomment if needed: <button class="profile-action-button" data-username="username" title="Unblock user"><img src="../static/icons/check.png"></button> -->
 					</div>
 				</div>
 			</div>
+			
 			
 			<div id="my-profile-history">
 				<h3>Match History</h3>
@@ -198,7 +198,7 @@
 		<div id="profile-popup" class="container d-none">
 			<div class="row title">
 				<div class="col">
-					<h4>Tgernez</h4>
+					<h4><span class="online-status online"></span>Tgernez</h4>
 				</div>
 			</div>
 			<div class="row d-inline-flex">
@@ -206,7 +206,6 @@
 					<img src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false" class="profile-picture">
 				</div>
 				<div class="col m-0 p-0">
-					<p><span class="online-status online"></span><span class="attribute">Online</span></p>
 					<p><span class="attribute">Rank: </span>#1</p>
 					<p><span class="attribute">Elo: </span>1000</p>
 					<p><span class="attribute">Winrate: </span>1.0</p>
