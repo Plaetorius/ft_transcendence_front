@@ -61,6 +61,7 @@
 }
 
 #friends div span {
+	cursor: pointer;
 	margin-left: 0.5rem;
 	font-size: 2rem;
 	font-family: 'Mouse Memoirs';
