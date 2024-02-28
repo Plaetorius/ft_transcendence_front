@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="../static/css/cards/cards.css">
 	<link rel="stylesheet" href="../static/css/users/profile.css">
 	<link rel="stylesheet" href="../static/css/users/friends.css">
+    <link rel="stylesheet" href="../static/css/chat/chats.css">
 </head>
 <body>
     <header class="container-fluid px-5 active">
@@ -148,7 +149,30 @@
 			</div>
 		</section>
 
-		<section id="my-profile" class="active">
+        <section id="chats" class="active">
+            <div class="container-fluid">
+				<div id="chats-header" class="row">
+					<div class="col d-flex flex-column justify-content-center align-items-center">
+						<h1>Chats</h1>
+					</div>
+				</div>
+			</div>
+            <div class="container-fluid w-75">
+                <div class="row">
+                    <div class="col d-flex justify-content-start align-items-center">
+						<img src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false" class="chats-profile">
+                        <span class="chats-profile">Tgernez</span>
+                    </div>
+					<div class="col d-flex justify-content-end align-items-center">
+						<button class="profile-action-button" data-username="username" title="Chat"><img src="../static/icons/chat.png" draggable="false"></button>
+						<button class="profile-action-button" data-username="username" title="Remove friend"><img src="../static/icons/remove-friend.png" draggable="false"></button>
+						<button class="profile-action-button" data-username="username" title="Block user"><img src="../static/icons/block.png" draggable="false"></button>
+					</div>
+                </div>
+            </div>
+        </section>
+
+		<section id="my-profile" class="">
 			<div class="container-fluid">
 				<div id="my-profile-header" class="row justify-content-between">
 					<div class="col-auto d-flex align-items-center">
@@ -374,6 +398,7 @@
 		</div>
     </main>
 	<script src="../static/js/index.js"></script>
+	<script src="../static/js/chat/chats.js"></script>
 	<script src="../static/js/cards/cards.js"></script>
 	<script src="../static/js/users/profile.js"></script>
 	<script src="../static/js/game/podium.js"></script>
