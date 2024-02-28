@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../static/css/general/fonts.css">
     <link rel="stylesheet" href="../static/css/general/general.css">
     <link rel="stylesheet" href="../static/css/general/my-profile.css">
+	<link rel="stylesheet" href="../static/css/general/register.css">
+    <link rel="stylesheet" href="../static/css/general/login.css">
     <link rel="stylesheet" href="../static/css/game/history.css">
     <link rel="stylesheet" href="../static/css/game/podium.css">
 	<link rel="stylesheet" href="../static/css/cards/cards.css">
@@ -87,8 +89,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid friendships mt-2 d-flex flex-column align-items-center">
 
+			<div class="container-fluid friendships mt-2 d-flex flex-column align-items-center">
 				<div class="row d-flex justify-content-center align-items-center w-75 mt-2">
 					<div class="col-6 d-flex justify-content-start align-items-center">
 						<img src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false" class="friendships-profile">				
@@ -104,7 +106,7 @@
 			</div>
 		</section>
 
-		<section id="podium" class="active">
+		<section id="podium" class="">
 			<div class="container-fluid">
 				<div id="podium-header" class="row">
 					<div class="col d-flex flex-column justify-content-center align-items-center">
@@ -254,6 +256,65 @@
 				</div>
 			</div>
 		</section>
+
+        <section id="register" class="">
+            <div class="container-fluid d-flex flex-column align-items-center">
+                <div class="row">
+                    <div class="col">
+                        <h1>Register</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <form id="register-form">
+                            <div>
+                                <input type="text" placeholder="Username...">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Email...">
+                            </div>
+                            <div>
+                                <input type="password" placeholder="Password...">
+                            </div>
+                            <div>
+                                <input type="password" placeholder="Confirm password...">
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit">Register</button>
+                            </div>
+                        </form>
+                        <div class="d-flex justify-content-center">
+                            <button id="already-account">Already have an account?</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="login" class="active">
+            <div class="container-fluid d-flex flex-column align-items-center">
+                <div class="row">
+                    <div class="col">
+                        <h1>Login</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <form id="login-form">
+                            <div>
+                                <input type="text" placeholder="Username...">
+                            </div>
+                            <div>
+                                <input type="password" placeholder="Password...">
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 		
 		<div id="card-popup" class="container d-none">

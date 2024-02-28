@@ -26,6 +26,8 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
+
+
 function blur_background() {
 	activeSection.classList.add("blurry");
 	header.classList.add("blurry");
