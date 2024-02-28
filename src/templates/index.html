@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../static/css/general/general.css">
     <link rel="stylesheet" href="../static/css/general/my-profile.css">
     <link rel="stylesheet" href="../static/css/game/history.css">
+    <link rel="stylesheet" href="../static/css/game/podium.css">
 	<link rel="stylesheet" href="../static/css/cards/cards.css">
 	<link rel="stylesheet" href="../static/css/users/profile.css">
 	<link rel="stylesheet" href="../static/css/users/friends.css">
@@ -65,10 +66,16 @@
 		</section>
 
 		<section id="games" class="">
-			
+			<div class="container-fluid">
+				<div id="games-header" class="row">
+					<div class="col d-flex flex-column justify-content-center align-items-center">
+						<h1>Games</h1>
+					</div>
+				</div>
+			</div>
 		</section>
 
-		<section id="friends" class="active">
+		<section id="friends" class="">
 			<div class="container-fluid">
 				<div id="friends-header" class="row">
 					<div class="col d-flex flex-column justify-content-center align-items-center">
@@ -97,8 +104,72 @@
 			</div>
 		</section>
 
-		<section id="podium" class="">
-			
+		<section id="podium" class="active">
+			<div class="container-fluid">
+				<div id="podium-header" class="row">
+					<div class="col d-flex flex-column justify-content-center align-items-center">
+						<h1>Podium</h1>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row d-flex justify-content-center align-items-end podium-segments">
+					<div id="second-place" class="col-4 d-flex justify-content-center podium-segment">
+						<img src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false" class="podium-profile">
+					</div>
+					<div id="first-place" class="col-4 d-flex justify-content-center podium-segment">
+						<img src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false" class="podium-profile">
+					</div>
+					<div id="third-place" class="col-4 d-flex justify-content-center podium-segment">
+						<img src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false" class="podium-profile">
+					</div>
+				</div>
+			</div>
+
+			<h2>Ranking</h2>
+			<div id="podium-list" class="container-fluid w-75">
+				<div class="row">
+					<div class="col d-flex align-items-center">
+						<span>4.</span>
+						<img src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false" class="podium-profile">
+						<span class="podium-profile d-flex align-items-center">Tgernez</span>
+					</div>
+					<div class="col d-flex align-items-center justify-content-end">
+						<div class="d-flex align-items-end">
+							<button class="profile-action-button me-1" data-username="username" title="Chat">
+								<img src="../static/icons/chat.png" draggable="false">
+							</button>
+							<button class="profile-action-button" data-username="username" title="Add friend">
+								<img src="../static/icons/add-friend.png" draggable="false">
+							</button>
+							<button class="profile-action-button" data-username="username" title="Block user">
+								<img src="../static/icons/block.png" draggable="false">
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col d-flex align-items-center">
+						<span>5.</span>
+						<img src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false" class="podium-profile">
+						<span class="podium-profile d-flex align-items-center">Tgernez</span>
+					</div>
+					<div class="col d-flex align-items-center justify-content-end">
+						<div class="d-flex align-items-end">
+							<button class="profile-action-button me-1" data-username="username" title="Chat">
+								<img src="../static/icons/chat.png" draggable="false">
+							</button>
+							<button class="profile-action-button" data-username="username" title="Add friend">
+								<img src="../static/icons/add-friend.png" draggable="false">
+							</button>
+							<button class="profile-action-button" data-username="username" title="Block user">
+								<img src="../static/icons/block.png" draggable="false">
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<section id="my-profile" class="">
@@ -268,8 +339,9 @@
 		</div>
     </main>
 	<script src="../static/js/index.js"></script>
-	<script src="../static/js//cards/cards.js"></script>
-	<script src="../static/js//users/profile.js"></script>
+	<script src="../static/js/cards/cards.js"></script>
+	<script src="../static/js/users/profile.js"></script>
+	<script src="../static/js/game/podium.js"></script>
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
