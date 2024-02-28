@@ -3,7 +3,7 @@ main #card-popup {
 	top: 10vh;
 	left: 30vw;
 	width: 40vw;
-	height: 70vh;
+	height: 75vh;
 	z-index: 100;
 	background-color: white;
 	border: 5px black solid;
@@ -11,8 +11,7 @@ main #card-popup {
 	background-position: center;
 	color: black;
 	font-size: large;
-	font-weight: medium;
-	
+	font-weight: medium;	
 }
 
 #card-popup .card-visual {
