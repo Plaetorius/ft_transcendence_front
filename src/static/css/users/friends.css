@@ -62,12 +62,18 @@
 
 #friends div span {
 	cursor: pointer;
-	margin-left: 0.5rem;
+	margin-left: 1rem;
 	font-size: 2rem;
 	font-family: 'Mouse-Memoirs';
 }
 
 #friends div span:hover {
 	transition: transform 0.3s ease;
-	transform: scale(1.1);
+	transform: scale(1.2);
+}
+
+#friends .friendships .row {
+	border-bottom: 0.1rem black solid;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
 }
