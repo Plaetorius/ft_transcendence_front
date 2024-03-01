@@ -1,4 +1,5 @@
 header {
+    display: none;
     position: fixed;
 	z-index: 10;
     left: 0;
@@ -16,6 +17,10 @@ header {
 
 header.scrolled {
     margin-top: -20vh;
+}
+
+header.active {
+    display: block;
 }
 
 header p {
