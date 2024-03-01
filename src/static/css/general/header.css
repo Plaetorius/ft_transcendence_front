@@ -87,6 +87,11 @@ header p {
     margin: 0;
 }
 
+#main-header p:hover {
+	transition: transform 0.3s ease;
+	transform: scale(1.2);
+}
+
 #main-header .header-middle-section h1 {
     text-align: center;
     font-family: 'Canterbury';
@@ -102,6 +107,7 @@ header p {
     overflow-x: hidden;
     border-radius: 50%;
 }
+
 
 #sub-header {
     border-top: solid 3px black;
