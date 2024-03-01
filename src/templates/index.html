@@ -20,29 +20,33 @@
     <header class="container-fluid px-5">
         <div id="main-header" class="row align-items-center justify-content-between">
             <div class="col-2  d-flex flex-column align-items-center justify-content-center header-left-section">
-                <img src="../static/icons/web.png" draggable="false">
-                <p>NEWS</p>
+                <a id="header-chats">
+					<img src="../static/icons/web.png" draggable="false">
+					<p>NEWS</p>
+				</a>
             </div>
             <div class="col-8 header-middle-section">
                 <h1 id="newspaperTitle">Transcendence</h1>
             </div>
             <div class="col-2 d-flex flex-column align-items-center justify-content-center header-right-section">
-				<img src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
-                <p>PROFILE</p>
+				<a id="header-profile">
+					<img src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false">
+					<p>PROFILE</p>
+				</a>
             </div>
         </div>
         <div id="sub-header" class="row align-items-center justify-content-between">
             <div class="col-3 d-flex align-items-center justify-content-center">
-                <a>HOME</a>
+                <a id="header-home">HOME</a>
             </div>
             <div class="col-3 d-flex align-items-center justify-content-center">
-                <a>GAMES</a>
+                <a id="header-games">GAMES</a>
             </div>
             <div class="col-3 d-flex align-items-center justify-content-center">
-                <a>FRIENDS</a>
+                <a id="header-friends">FRIENDS</a>
             </div>
             <div class="col-3 d-flex align-items-center justify-content-center">
-                <a>PODIUM</a>
+                <a id="header-podium">PODIUM</a>
             </div>
         </div>
     </header>
@@ -316,6 +320,7 @@
 	<script src="../static/js/cards/cards.js"></script>
 	<script src="../static/js/users/profile.js"></script>
 	<script src="../static/js/game/podium.js"></script>
+	<script src="../static/js/general/navigation.js"></script>
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
