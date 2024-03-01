@@ -1,4 +1,4 @@
-<!-- base.html -->
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -349,88 +349,89 @@
                                 <input type="text" placeholder="Username...">
                             </div>
                             <div>
-                                <input type="password" placeholder="Password...">
+								<input type="password" placeholder="Password...">
                             </div>
                             <div class="d-flex justify-content-center">
-                                <button type="submit">Login</button>
+								<button type="submit">Login</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
-
-		<div id="chat-popup" class="container d-none">
-			<div class="row title">
-				<div class="col">
-					<h4>Stoupid</h4>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					
-				</div>
-			</div>
-		</div>
-
 		
-		<div id="card-popup" class="container d-none">
-			<div class="row title">
-				<div class="col">
-					<h4>Basher</h4>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-6 my-0">
-					<img class="card-visual" src="../static/cards/card-basher-1.png" draggable="false">
-				</div>
-				<div class="col-6 d-flex flex-column mt-5">
-					<div class="col mt-2">
-						<div><span class="rank">Rank 1: </span>+5% ball speed</div>
-						<div><span class="rank">Rank 2: </span>+10% return ball speed</div>
-					</div>
-					<div class="col mt-0 p-0">
-						<div class="quote">"Oh you wanna play it like that? TAKE THIS"</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="profile-popup" class="container d-none">
-			<div class="row title">
-				<div class="col">
-					<h5><span class="online-status online"></span>Tgernez</h5>
-				</div>
-			</div>
-			<div class="row d-inline-flex">
-				<div class="col m-0">
-					<img src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false" class="profile-picture">
-				</div>
-				<div class="col m-0 p-0">
-					<p><span class="attribute">Rank: </span>#1</p>
-					<p><span class="attribute">Elo: </span>1000</p>
-					<p><span class="attribute">Winrate: </span>1.0</p>
-					<p><span class="attribute">Joined: </span>26/01/2024</p>
-				</div>
-			</div>
-			<div class="row m-2">
-				<div class="col">
-					<span class="attribute">Bio: </span> This is a bio, it's not such a long text, but that still does the trick, I hope. That would be pretty sad if that was too short to make a proper test, or too long that it would look stupid, no?
-				</div>
-			</div>
-			<div class="row m-2">
-				<div class="col">
-					<!-- TODO change ID for CLASS -->
-					<button id="profile-popup-add-friend" data-username="username"><img src="../static/icons/chat.png" title="Chat" draggable="false"></button>
-					<button id="profile-popup-add-friend" data-username="username"><img src="../static/icons/add-friend.png" title="Add friend" draggable="false"></button>
-					<!-- TODO <button id="profile-popup-remove-friend" data-username="username"><img src="../static/icons/remove-friend.png" title="Remove friend" draggable="false"></button> -->
-					<button id="profile-popup-block" data-username="username"><img src="../static/icons/block.png" title="Block user" draggable="false"></button>
-					<!-- TODO <button id="profile-popup-unblock" data-username="username"><img src="../static/icons/check.png" title="Unblock user" draggable="false"></button> -->
-					<button id="profile-popup-profile" data-username="username"><img src="../static/icons/profile.png" title="Profile" draggable="false"></button>
-				</div>
-			</div>
-		</div>
+	
     </main>
+	<div id="chat-popup" class="container d-none popup">
+		<div class="row title">
+			<div class="col">
+				<h4>Stoupid</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				
+			</div>
+		</div>
+	</div>
+	
+	<div id="card-popup" class="container d-none popup">
+		<div class="row title">
+			<div class="col">
+				<h4>Basher</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6 my-0">
+				<img class="card-visual" src="../static/cards/card-basher-1.png" draggable="false">
+			</div>
+			<div class="col-6 d-flex flex-column mt-5">
+				<div class="col mt-2">
+					<div><span class="rank">Rank 1: </span>+5% ball speed</div>
+					<div><span class="rank">Rank 2: </span>+10% return ball speed</div>
+				</div>
+				<div class="col mt-0 p-0">
+					<div class="quote">"Oh you wanna play it like that? TAKE THIS"</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="profile-popup" class="container d-none popup">
+		<div class="row title">
+			<div class="col">
+				<h5><span class="online-status online"></span>Tgernez</h5>
+			</div>
+		</div>
+		<div class="row d-inline-flex">
+			<div class="col m-0">
+				<img src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false" class="profile-picture">
+			</div>
+			<div class="col m-0 p-0">
+				<p><span class="attribute">Rank: </span>#1</p>
+				<p><span class="attribute">Elo: </span>1000</p>
+				<p><span class="attribute">Winrate: </span>1.0</p>
+				<p><span class="attribute">Joined: </span>26/01/2024</p>
+			</div>
+		</div>
+		<div class="row m-2">
+			<div class="col">
+				<span class="attribute">Bio: </span> This is a bio, it's not such a long text, but that still does the trick, I hope. That would be pretty sad if that was too short to make a proper test, or too long that it would look stupid, no?
+			</div>
+		</div>
+		<div class="row m-2">
+			<div class="col">
+				<!-- TODO change ID for CLASS -->
+				<button id="profile-popup-add-friend" data-username="username"><img src="../static/icons/chat.png" title="Chat" draggable="false"></button>
+				<button id="profile-popup-add-friend" data-username="username"><img src="../static/icons/add-friend.png" title="Add friend" draggable="false"></button>
+				<!-- TODO <button id="profile-popup-remove-friend" data-username="username"><img src="../static/icons/remove-friend.png" title="Remove friend" draggable="false"></button> -->
+				<button id="profile-popup-block" data-username="username"><img src="../static/icons/block.png" title="Block user" draggable="false"></button>
+				<!-- TODO <button id="profile-popup-unblock" data-username="username"><img src="../static/icons/check.png" title="Unblock user" draggable="false"></button> -->
+				<button id="profile-popup-profile" data-username="username"><img src="../static/icons/profile.png" title="Profile" draggable="false"></button>
+			</div>
+		</div>
+	</div>
+
 	<script src="../static/js/index.js"></script>
 	<script src="../static/js/chat/chats.js"></script>
 	<script src="../static/js/cards/cards.js"></script>

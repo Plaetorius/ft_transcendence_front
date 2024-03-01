@@ -3,6 +3,7 @@ const body = document.body;
 const header = document.getElementsByTagName('header')[0];
 const nav = document.getElementsByTagName("nav")[0];
 const main = document.getElementsByTagName("main")[0];
+const pages = document.getElementById("pages");
 let activeSection = document.querySelector("section.active");
 let lastScroll = 0;
 
@@ -27,11 +28,11 @@ window.addEventListener('scroll', () => {
 });
 
 function blur_background() {
-	activeSection.classList.add("blurry");
+	main.classList.add("blurry");
 	header.classList.add("blurry");
 }
 
 function unblur_background() {
-	activeSection.classList.remove("blurry");
+	main.classList.remove("blurry");
 	header.classList.remove("blurry");
 }
