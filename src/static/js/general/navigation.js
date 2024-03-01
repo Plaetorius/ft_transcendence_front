@@ -1,5 +1,5 @@
 // Default section to activate on page load, if none is specified in the URL
-const defaultSection = 'home';
+const defaultSection = 'chats';
 const currentHash = window.location.hash.replace('#', '');
 const initialSection = currentHash || defaultSection;
 
