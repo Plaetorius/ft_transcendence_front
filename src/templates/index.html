@@ -18,6 +18,8 @@
 	<link rel="stylesheet" href="../static/css/users/profile.css">
 	<link rel="stylesheet" href="../static/css/users/friends.css">
     <link rel="stylesheet" href="../static/css/chat/chats.css">
+    <link rel="stylesheet" href="../static/css/chat/notifications.css">
+
 </head>
 <body>
     <header class="container-fluid px-5 active">
@@ -190,7 +192,7 @@
 						</div>
 					</div>
 					<div class="col-auto">
-						<button class="profile-action-button" data-username="username" title="Chat"><img src="../static/icons/chat.png" draggable="false"></button>
+						<button class="profile-action-button chat-popup" data-username="username" title="Chat"><img src="../static/icons/chat.png" draggable="false"></button>
 						<button class="profile-action-button" data-username="username" title="Add friend"><img src="../static/icons/add-friend.png" draggable="false"></button>
 						<!-- TODO <button class="profile-action-button" data-username="username" title="Remove friend"><img src="../static/icons/remove-friend.png" draggable="false"></button> -->
 						<button class="profile-action-button" data-username="username" title="Block user"><img src="../static/icons/block.png" draggable="false"></button>
@@ -415,11 +417,15 @@
 			<div class="col-10">
 				<input type="text" class="form-control w-100" placeholder="Type a message...">
 			</div>
-			<div class="col-1">
-				<button class="" style="margin-right: 5px;">Send</button>
+			<div class="col-1 m-0">
+				<button class="">
+					<img src="../static/icons/send.png">
+				</button>
 			</div>
-			<div class="col-1">
-				<button class="">Invite</button>
+			<div class="col-1 m-0">
+				<button class="">
+					<img src="../static/icons/clash.png">
+				</button>
 			</div>
 		</div>
 	</div>
@@ -471,7 +477,7 @@
 		<div class="row m-2">
 			<div class="col">
 				<!-- TODO change ID for CLASS -->
-				<button id="profile-popup-add-friend" data-username="username"><img src="../static/icons/chat.png" title="Chat" draggable="false"></button>
+				<button id="profile-popup-chat" class="open-chat" data-username="username"><img src="../static/icons/chat.png" title="Chat" draggable="false"></button>
 				<button id="profile-popup-add-friend" data-username="username"><img src="../static/icons/add-friend.png" title="Add friend" draggable="false"></button>
 				<!-- TODO <button id="profile-popup-remove-friend" data-username="username"><img src="../static/icons/remove-friend.png" title="Remove friend" draggable="false"></button> -->
 				<button id="profile-popup-block" data-username="username"><img src="../static/icons/block.png" title="Block user" draggable="false"></button>
@@ -483,6 +489,7 @@
 
 	<script src="../static/js/index.js"></script>
 	<script src="../static/js/chat/chats.js"></script>
+	<script src="../static/js/chat/notifications.js"></script>
 	<script src="../static/js/cards/cards.js"></script>
 	<script src="../static/js/users/profile.js"></script>
 	<script src="../static/js/general/navigation.js"></script>

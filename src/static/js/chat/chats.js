@@ -4,6 +4,7 @@ const chatPopup = document.getElementById("chat-popup");
 document.querySelectorAll(".open-chat").forEach(element => {
 	element.addEventListener('click', (event) => {
 		event.stopPropagation();
+		hide_popups();
 		chatPopup.classList.remove("d-none");
 		chatPopup.classList.add("d-block");
 		blur_background();
@@ -27,3 +28,8 @@ function scrollToLastMessages() {
         chatMessages.scrollTop = chatMessages.scrollHeight;
     }
 }
+
+chatPopup.classList.remove("d-none");
+chatPopup.classList.add("d-block");
+blur_background();
+scrollToLastMessages();

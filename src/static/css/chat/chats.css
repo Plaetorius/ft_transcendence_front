@@ -75,7 +75,7 @@
 	top: 10vh;
 	left: 30vw;
 	width: 40vw;
-	height: 80vh;
+	height: 81vh;
 	z-index: 100;
 	background-color: white;
 	border: 5px black solid;
@@ -120,10 +120,6 @@
     flex-grow: 1;
 }
 
-#chat-popup button {
-    /* Add any button styling here if needed */
-}
-
 #chat-popup .message img {
 	width: 5vh;
 	height: 5vh;
@@ -157,4 +153,35 @@
 #chat-popup div.message {
 	margin-top: 0.2rem;
 	margin-bottom: 0.2rem;
+}
+
+#chat-popup input {
+	background: none;
+	border: none;
+	border-bottom: 0.15rem rgb(97, 69, 18) solid;
+}
+
+#chat-popup button {
+	padding: 0.6rem 0.8rem;
+	background: rgb(97, 69, 18);
+    font-family: 'Mouse-Memoirs';
+    color: whitesmoke;
+    border: none;
+}
+
+#chat-popup button img {
+	filter: invert();
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+#chat-popup button:hover {
+    transition: background-color 0.3s ease;
+	transition: transform 0.3s ease;
+	transform: scale(1.2);
+	background: rgb(197, 145, 48);
+}
+
+#chat-popup input::placeholder {
+	color: rgb(44, 43, 42);
 }
