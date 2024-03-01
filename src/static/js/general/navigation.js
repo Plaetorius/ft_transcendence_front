@@ -1,4 +1,4 @@
-setActiveSection('home');
+setActiveSection('chats');
 
 document.getElementById("header-home").onclick = () => navigateToSection("home");
 document.getElementById("header-games").onclick = () => navigateToSection("games");
@@ -14,8 +14,8 @@ function navigateToSection(sectionId) {
 
 function setActiveSection(sectionId) {
 	document.querySelectorAll("main > section").forEach(section => {
-		section.style.display = 'none';
+		section.classList.remove("active");
 	});
-	document.getElementById(sectionId).style.display = 'block';
+	document.getElementById(sectionId).classList.add("active");
 }
 
