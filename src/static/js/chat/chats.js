@@ -28,8 +28,3 @@ function scrollToLastMessages() {
         chatMessages.scrollTop = chatMessages.scrollHeight;
     }
 }
-
-chatPopup.classList.remove("d-none");
-chatPopup.classList.add("d-block");
-blur_background();
-scrollToLastMessages();
