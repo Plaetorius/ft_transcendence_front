@@ -1,4 +1,4 @@
-header {
+header, header.blurry {
     display: none;
     position: fixed;
 	z-index: 10;
@@ -6,16 +6,17 @@ header {
     top: 0;
     height: 20vh;
     margin-top: 0vh;
-    transition: margin-top 0.5s;
     background-image: url('../../backgrounds/old-paper-background.jpg');
     background-repeat: no-repeat;
     overflow-y: hidden;
     background-size: cover;
     background-blend-mode: screen;
     background-color: rgba(222, 184, 135, 0.6);
+	transition: margin-top 0.5s;
 }
 
-header.scrolled {
+header.scrolled, header.blurry.scrolled {
+	transition: margin-top 0.5s;
     margin-top: -20vh;
 }
 
