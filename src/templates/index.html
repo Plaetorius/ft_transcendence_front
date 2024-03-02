@@ -192,7 +192,7 @@
 						</div>
 					</div>
 					<div class="col-auto">
-						<button class="profile-action-button settings-popup" title="Settings">
+						<button class="profile-action-button open-settings" title="Settings">
 							<img src="../static/icons/settings.png" draggable="false">
 						</button>
 					</div>
@@ -409,7 +409,7 @@
 					<span>16:20</span>
 				</div>
 			</div>
-			<!-- Messages will be dynamically inserted here -->
+			<!-- Messages here -->
 		</div>
 		<div class="chat-input w-100 row d-flex">
 			<div class="col-10">
@@ -492,6 +492,35 @@
 			</div>
 			<div class="col-9 my-2">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan lorem sit amet tellus maximus iaculis <a>here</a>.
+			</div>
+		</div>
+	</div>
+
+	<div id="settings-popup" class="container d-none popup">
+		<div class="row title">
+			<div class="col">
+				<h5>Settings</h5>
+			</div>
+		</div>
+		<div class="row w-100 d-flex justify-content-start">
+			<div class="col m-0">
+				<p>Click to change photo</p>
+				<input type="file" id="profile-picture-input" hidden accept="image/*">
+				<img src="../static/profile_pictures/tgernez-intra-pp.jpg" draggable="false" class="settings-picture">
+			</div>
+			<div class="col m-0 p-0">
+				<form>
+					<div><input id="settings-username" placeholder="Username..." name="username" type="text" value="tgernez"></div>
+					<div><input id="settings-email" placeholder="Email..." name="email" type="email" value="tgernez@student.42.fr"></div>
+					<div><input id="settings-first-name" placeholder="First name..." name="first-name" type="text" value="Tom"></div>
+					<div><input id="settings-last-name" placeholder="Last name..." name="last-name" type="text" value="Gernez"></div>
+					<div><textarea id="settings-bio" placeholder="Bio..." name="bio">Content of a bio</textarea></div>
+					<div class="form-group"><input type="checkbox" id="settings-2fa" name="2fa"><label for="settings-2fa">Enable 2FA</label></div>
+					<div>
+						<button type="submit">Save</button>
+						<button type="button" id="reset-password">Reset Password</button>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
