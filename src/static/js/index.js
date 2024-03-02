@@ -44,4 +44,6 @@ function hide_popups() {
 	profilePopup.classList.remove("d-block");
 	cardPopup.classList.add("d-none");
 	cardPopup.classList.remove("d-block");
+	settingsPopup.classList.add("d-none");
+	settingsPopup.classList.remove("d-block");
 }

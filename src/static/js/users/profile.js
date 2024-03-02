@@ -4,6 +4,7 @@ const profilePopup = document.getElementById("profile-popup");
 document.querySelectorAll(".open-profile").forEach(element => {
 	element.addEventListener('click', (event) => {
 		event.stopPropagation();
+		hide_popups();
 		profilePopup.classList.remove("d-none");
 		profilePopup.classList.add("d-block");
 		blur_background();
@@ -20,12 +21,14 @@ document.addEventListener('click', (event) => {
 	}
 });
 
+
 const settingsPopup = document.getElementById("settings-popup");
 
 // Open Settings Popup
 document.querySelectorAll(".open-settings").forEach(element => {
 	element.addEventListener('click', (event) => {
 		event.stopPropagation();
+		hide_popups();
 		settingsPopup.classList.remove("d-none");
 		settingsPopup.classList.add("d-block");
 		blur_background();
@@ -42,16 +45,11 @@ document.addEventListener('click', (event) => {
 	}
 });
 
-settingsPopup.classList.remove("d-none");
-settingsPopup.classList.add("d-block");
-blur_background();
 
-
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('.settings-picture').addEventListener('click', function() {
-        document.getElementById('profile-picture-input').click();
-    });
+document.querySelector('.settings-picture').addEventListener('click', function() {
+	document.getElementById('profile-picture-input').click();
 });
+
 
 // Handle settings form
 const form = document.querySelector('#settings-popup form');

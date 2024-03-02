@@ -4,6 +4,7 @@ const cardPopup = document.getElementById("card-popup");
 document.querySelectorAll(".open-card").forEach(element => {
 	element.addEventListener('click', (event) => {
 		event.stopPropagation();
+		hide_popups();
 		cardPopup.classList.remove("d-none");
 		cardPopup.classList.add("d-block");
 		blur_background();
